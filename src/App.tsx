@@ -54,9 +54,6 @@ export default function App() {
             <div className="h-6 w-px bg-slate-200 hidden md:block"></div>
             <div className="flex items-center gap-3">
               <a href="#" className="text-slate-500 hover:text-orange-600 transition-colors">
-                <Github size={20} />
-              </a>
-              <a href="#" className="text-slate-500 hover:text-orange-600 transition-colors">
                 <ExternalLink size={20} />
               </a>
             </div>
@@ -129,9 +126,7 @@ export default function App() {
                     {activeContent.title}
                   </h1>
                   <div className="flex items-center gap-2 text-sm text-slate-500">
-                    <span>Last updated: Feb 20, 2026</span>
-                    <span>•</span>
-                    <span>4 min read</span>
+                    <span>Last updated: Feb 21, 2026</span>
                   </div>
                 </div>
                 
