@@ -38,12 +38,6 @@ The documentation and underlying methods are based on the research paper:
    ```bash
    npm install
    ```
-3. Configure environment variables:
-   Create a `.env.local` file and add your Gemini API key:
-   ```env
-   GEMINI_API_KEY=your_api_key_here
-   ```
-
 ### Local Development
 
 To start the development server:
