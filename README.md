@@ -1,20 +1,58 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Speech to Text NER Psychology
 
-# Run and deploy your AI Studio app
+Documentation and implementation suite for Indonesian Mental Health Named Entity Recognition (NER), combining counseling audio transcripts with adapted text data.
 
-This contains everything you need to run your app locally.
+## Project Overview
 
-View your app in AI Studio: https://ai.studio/apps/6f1d51d4-8d44-4496-9283-6ef5f8bd8d9d
+This repository provides a robust toolkit for processing conversational audio data and performing text normalization for NLP tasks. It is specifically optimized for handling large datasets and specialized counseling interactions in the Indonesian language.
 
-## Run Locally
+The documentation and underlying methods are based on the research paper:
+**"A Benchmark Suite for Indonesian Mental Health NER: Combining Real Counseling Audio Transcripts and Adapted Text Data"**
 
-**Prerequisites:**  Node.js
+## Key Features
 
+- **Transcription Pipeline**: High-performance audio-to-text conversion using Whisper and Faster-Whisper engines.
+- **Text Preprocessing**: Advanced cleaning utilities including URL removal, symbol stripping, and whitespace normalization.
+- **Domain-Specific NER**: Specialized Named Entity Recognition tailored for the psychology and mental health domain.
+- **Redundancy Detection**: Automated detection and filtering of conversational redundancies.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Technical Specifications
+
+- **Frontend**: React 19 with Vite and Tailwind CSS.
+- **Animation**: Motion (formerly Framer Motion).
+- **AI/ML**: Google Generative AI (@google/genai) and Whisper-based transcription engines.
+- **Icons**: Lucide React.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS recommended)
+- FFmpeg (Required for audio processing)
+- Python 3.8+ (If running transcription engines locally)
+
+### Installation
+
+1. Clone the repository and navigate to the project directory.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Configure environment variables:
+   Create a `.env.local` file and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+### Local Development
+
+To start the development server:
+```bash
+npm run dev
+```
+
+The application will be accessible at `http://localhost:3000`.
+
+## License
+
+Please refer to the LICENSE file for details on licensing and usage terms.
